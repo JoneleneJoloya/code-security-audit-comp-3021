@@ -1,0 +1,93 @@
+<h1>Events Signup</h1>
+    <section id="events_signup_content">
+        <h2>Sign Up for an Event here!</h2>
+        <form id="event_form" aria-label="Events sign up form">
+            <fieldset class="event_group_container">
+                <div class="event_group" id="event_name_input">
+                    <label for="event_name">Event Name</label>
+                    <input 
+                        type="text" 
+                        id="event_name"
+                        name="event_name"
+                        placeholder="What is the name of the event"
+                        aria-label="Enter the name of the event you are signing up"
+                    >
+
+                    <div class="error" id="event_name_error"></div>
+                </div>
+
+                <div class="event_group" id="rep_name_input">
+                    <label for="rep_name">Company Representative's Name</label>
+                    <input 
+                        type="text" 
+                        id="rep_name"
+                        name="rep_name"
+                        placeholder="Enter name of Company Representative"
+                        aria-label="Enter name of Company Representative"
+                    >
+                    <div class="error" id="rep_name_error"></div>
+                </div>
+
+                <div class="event_group" id="rep_email_input">
+					<label 
+                        for="rep_email" 
+                        class="email">Your email:</label>
+					<input 
+                        type="text" 
+                        id="rep_email" 
+                        name="rep_email"  
+                        placeholder="Enter your email"
+                        aria-label="Enter your email"
+                        maxlength="50" 
+                        value="" 
+                        autofocus="autofocus" 
+                        autocomplete="off"
+                        />					
+					<div class="error" id="rep_email_error"></div>
+				</div>
+                
+                <div class="event_group" id="role_selection_input">
+                    <label for="role_select" name="role">Role</label>
+                    <select id="role_select">
+                        <option value="">--Please select role--</option>
+                        <option value="sponsor">Sponsor</option>
+                        <option value="participant">Participant</option>
+                        <option value="organizer">Organizer</option>
+                    </select>
+                    <div class="error" id="role_select_error"></div>
+                </div>
+            </fieldset>
+
+            <button 
+                type="submit" 
+                id="submit_event_btn"
+                aria-label="Submit Event Signup information"
+                >Submit Signup</button>
+        </form>
+        
+    </section>
+    <section id="event_signup_table">
+      <table id="event_table" aria-label="Event sign up table">
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Participant's Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+            <!--Populate information of events signups and delete buttons here-->
+        </tbody>
+      </table>
+      <p id="event_table_error" class="error" role="alert"></p>
+
+    </section>
+
+    <section id="event_signup_summary">
+        <h2>Breakdown of event signups</h2>
+        <ul id="event_summary_list">
+            <!-- Populate information of summary here-->
+        </ul>
+    </section>

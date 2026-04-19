@@ -1,0 +1,80 @@
+<h1>Donation Tracker</h1>
+
+<section id="new_donation_content">
+    <h2>Add a new donation here!</h2>
+
+    <form id="donation_form" aria-label="Donation submission form">
+
+        <div id="charity_name_container" class="donation_input_row">
+            <div id="charity_name_label" class="donation_label">
+                <label for="charity_name">Charity Name:</label>
+            </div>
+            <input type="text" id="charity_name" name="charity_name" placeholder="Which charity received the donation"
+                aria-label="Enter the name of the charity receiving the donation" tabindex="1" />
+        </div>
+
+        <div id="donor_email_container" class="donation_input_row">
+            <div id="donor_email_label" class="donation_label">
+                <label for="donor_email">Donor Email:</label>
+            </div>
+            <input type="email" id="donor_email" name="donor_email" placeholder="username@email.com"
+                aria-label="Enter donor email address" tabindex="2" />
+        </div>
+
+        <div id="donation_amount_container" class="donation_input_row">
+            <div id="donation_amount_label" class="donation_label">
+                <label for="donation_amount">Donation Amount (CAD):</label>
+            </div>
+            <input type="number" id="donation_amount" name="donation_amount" placeholder="$100.00"
+                aria-label="Enter the donation amount in Canadian dollars" tabindex="3" />
+        </div>
+
+        <div id="donation_date_container" class="donation_input_row">
+            <div id="donation_date_label" class="donation_label">
+                <label for="donation_date">Date of Donation:</label>
+            </div>
+            <input type="date" id="donation_date" name="donation_date"
+                aria-label="Select the date the donation was made" tabindex="4" />
+        </div>
+
+        <div id="donation_comment_container" class="donation_input_row">
+            <div id="donation_comment_label" class="donation_label">
+                <label for="donation_comment" id="donation_comment_label">Donor Comment:</label>
+            </div>
+
+            <textarea id="donation_comment" name="donation_comment" rows="4" cols="50" placeholder="Optional message"
+                aria-label="Enter an optional donor comment" tabindex="5"></textarea>
+        </div>
+
+        <button type="submit" aria-label="Submit donation information" tabindex="6">
+            Submit Donation
+        </button>
+
+    </form>
+</section>
+
+<section id="donation_database_content">
+    <div id="donation_history">
+        <h2>Donation Records Table</h2>
+        <table id="donation_table">
+            <thead>
+                <tr>
+                    <th>Charity Name</th>
+                    <th>Amount (CAD)</th>
+                    <th>Date (Year-Month-Day)</th>
+                    <th>Comment</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <div id="donation_summary">
+        <p id="summary_amount">
+            Total Amount Donated (CAD): $
+            <span id="donation_summary_value">100.00</span>
+        </p>
+    </div>
+</section>

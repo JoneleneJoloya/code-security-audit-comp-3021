@@ -1,0 +1,39 @@
+# Node.js dependencies
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output (if any)
+dist/
+build/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jest test results
+/test-results/
+
+# Temporary files
+*.tmp
+*.swp
+
+# GitHub Actions workflow artifacts
+.github/workflows/test-results/
+
+# Coverage reports (if you use coverage)
+coverage/

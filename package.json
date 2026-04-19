@@ -1,0 +1,39 @@
+{
+  "name": "comp_2230_project",
+  "version": "1.0.0",
+  "description": "Final project of COMP_2230 - Front End Development",
+  "main": "main.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alcoranpaul/COMP_2230_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/alcoranpaul/COMP_2230_project/issues"
+  },
+  "homepage": "https://github.com/alcoranpaul/COMP_2230_project#readme",
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "jest-junit": "^16.0.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "outputDirectory": "test-results/jest",
+          "outputName": "results.xml"
+        }
+      ]
+    ]
+  }
+}
